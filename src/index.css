@@ -49,3 +49,17 @@ body {
 ::-webkit-scrollbar-thumb:hover {
   background: #006B45;
 }
+
+/* Subtle floating animation for Hero badge */
+@keyframes bounce-subtle {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-6px);
+  }
+}
+
+.animate-bounce-subtle {
+  animation: bounce-subtle 3.5s ease-in-out infinite;
+}
